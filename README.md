@@ -28,12 +28,12 @@ curl https://pyenv.run | bash
 
 3 ) Rajouter dans le fichier .bashrc les lignes suivantes : 
 
-# Load pyenv automatically
+Load pyenv automatically
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export
 PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
-# Load pyenv-virtualenv automatically
+Load pyenv-virtualenv automatically
 eval "$(pyenv virtualenv-init -)"
 
 4) Commenter le bloc conda initialize pour éviter tout conflit avec Pyenv
